@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Ayush-Tayal.github.io/portfolio",
   "name": "ayush-tayal",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,7 @@
     "@testing-library/user-event": "^13.5.0",
     "d3-ease": "^3.0.1",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^4.0.0",
     "noty": "^3.2.0-beta-deprecated",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -26,6 +28,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
