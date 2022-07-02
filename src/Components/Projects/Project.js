@@ -7,13 +7,16 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { Bounce, Flip } from "react-reveal";
 
 const Project = () => {
   // console.log("projeect data", projects_data);
 
   return (
     <div id="projects">
-      <h1> Personal Projects </h1>
+      <Bounce>
+        <h1> PERSONAL PROJECTS </h1>
+      </Bounce>
 
       <div id="projects_card">
         {projects_data &&

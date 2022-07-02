@@ -14,11 +14,17 @@ import {
 } from "react-icons/si";
 import { FaBootstrap, FaReact, FaJira } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
+import { Bounce, Zoom } from "react-reveal";
 
 const Skills = () => {
   return (
     <div id="skills">
-      <h1 className="skill-heading"> My Skills </h1>
+      <Bounce>
+        <h1 className="skill-heading"> MY SKILLS </h1>
+      </Bounce>
+      
+      <Zoom>
+        
 
       <div id="skill_content">
         <div>
@@ -92,6 +98,7 @@ const Skills = () => {
         </div>
 
       </div>
+    </Zoom>
 
     </div>
   );

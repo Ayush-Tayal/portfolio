@@ -2,7 +2,8 @@ import React from "react";
 import "./Home.css";
 import logo from "../../Assests/icon.jpg";
 import Typewriter from "typewriter-effect";
-import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
+import { SiGithub, SiGmail } from "react-icons/si";
+import { AiFillLinkedin} from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
 const Home = () => {
@@ -35,7 +36,7 @@ const Home = () => {
             className="home_icons git_icn"
             onClick={() => window.open("https://github.com/Ayush-Tayal")}
           />
-          <SiLinkedin
+          <AiFillLinkedin
             className="home_icons ldn_icn"
             onClick={() =>
               window.open("https://www.linkedin.com/in/ayush-tayal-4a962b18a/")

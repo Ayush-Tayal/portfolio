@@ -3,19 +3,8 @@
     margin-top: 5rem;
 }
 
-#educations {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .experience-heading {
     text-align: center;
 }
 
-.educ {
-    background: #2d343e;
-    border-radius: 15px;
-    padding: 20px;
-    font-size: 22px;
-}
+

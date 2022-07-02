@@ -8,14 +8,24 @@ import Contact from "./Components/Contact/Contact";
 import Experience from "./Components/Experience/Experience";
 import Projects from "./Components/Projects/Project";
 import Publication from "./Components/Publication/Publication";
+import bg from './Assests/bg.jpg'
+import Education from "./Components/Education/Education";
+
+const myStyle = {
+  backgroundImage:
+    `url(${bg})`,
+    backgroundRepeat: 'space',
+    backgroundSize: '4px auto'
+};
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={myStyle}>
       <Navbar />
       <Home />
       <About />
       <Skills />
+      <Education/>
       <Experience />
       <Projects />
       <Publication />

@@ -1,11 +1,15 @@
 import { Button } from '@mui/material'
 import React from 'react'
+import { Bounce, Flip } from 'react-reveal'
 import './Publication.css'
 
 const Publication = () => {
   return (
     <div id='publication'>
-      <h1 className='publication-heading'> Publication </h1>
+      <Bounce>
+        <h1 className='publication-heading'> PUBLICATION </h1>
+      </Bounce>
+        
 
       <div id='publication-info'>
         <h2> HYPERLOOP TRANSPORTATION SYSTEM </h2>

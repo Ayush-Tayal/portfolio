@@ -3,12 +3,16 @@ import './About.css'
 import about from '../../Assests/about.png'
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import { Button } from '@mui/material'
+import { Flip } from 'react-reveal';
 
 const About = () => {
   return (
     <div id='about'>
       <div id='about-me'>
-        <h1> About Me </h1>
+        <Flip>
+          <h1> ABOUT ME </h1>
+        </Flip>
+          
         
         <p> Hi, Ayush Tayal this side from Delhi, completed my graduation in Bachelor degree. Beside this, I am 
           trained in Web Development and love to code using MERN Stack.Currently I'm working as a Software 
