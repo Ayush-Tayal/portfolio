@@ -1,0 +1,9 @@
+#page-not-found {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 10%;
+} 
+
+#page-not-found button {
+    margin-top: 20px;
+}

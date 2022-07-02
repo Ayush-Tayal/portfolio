@@ -1,0 +1,31 @@
+#projects {
+    color: white;
+    margin-top: 5rem;
+
+}
+
+#projects h1 {
+    text-align: center;
+}
+
+#projects_card {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+}
+
+.project_image {
+    padding-top: 10px;
+    
+}
+
+.project_title {
+    padding: 20px;
+}
+
+.project_button {
+    display: flex;
+    justify-content: space-around;
+}

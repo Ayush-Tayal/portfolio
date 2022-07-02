@@ -1,0 +1,46 @@
+#contact h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 5rem;
+
+}
+
+#contact_section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#google-map-code iframe{
+    padding: 20px;
+    height: 60vh;
+    width: 40vw;
+}
+
+#contact-me input,textarea {
+    text-decoration: none;
+    outline: none;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #2d343e;
+}
+
+.textarea textarea{
+    width: 47vw;
+    height: 20vh;
+}
+
+#send-message {
+    text-align: center;
+}
+
+#contact-me button {
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: #2ca46d;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 20px;
+}

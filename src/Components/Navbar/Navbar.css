@@ -1,0 +1,29 @@
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #2ca46d;
+}
+
+#navbar a {
+    color: whitesmoke;
+    font-size: 22px;
+    background-color: #2ca46d;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+#left-nav a {
+    font-weight: 800;
+}
+
+#right-nav a {
+    font-weight: 500;
+    padding-right: 20px;
+}
