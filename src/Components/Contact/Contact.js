@@ -39,8 +39,8 @@ const Contact = () => {
       </Bounce>
 
       <div id="contact_section">
-        <Fade left>
-          <div id="google-map-code">
+        <Fade>
+          <div id="google-map">
             <iframe
               title="Delhi"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.48129412968!2d77.06889969035102!3d28.52728034389636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1644826171008!5m2!1sen!2sin"
@@ -59,7 +59,7 @@ const Contact = () => {
               <input type="text" name="message" placeholder="Subject" required />
 
               <div className="textarea">
-                <textarea placeholder="Your Message" required />
+                <textarea placeholder="Type Your Message Here..." required />
               </div>
 
               <div id="send-message">

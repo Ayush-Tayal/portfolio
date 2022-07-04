@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 #about-me h1 {
@@ -18,11 +18,12 @@
 #about-me p {
     text-align: justify;
     font-size: 20px;
+    line-height: 160% ;
 }
 
 #about-img img {
-    margin-top: 20px;
-    height: 60vh;
+    /* margin-top: 2rem; */
+    height: 50vh;
 }
 
 #download-resume button{

@@ -13,10 +13,10 @@
 
 #navbar a {
     color: whitesmoke;
-    font-size: 22px;
+    font-size: 24px;
     background-color: #2ca46d;
     font-family: 'Poppins';
-    font-weight: bold;
+    font-weight: 900;
 }
 
 #left-nav a {

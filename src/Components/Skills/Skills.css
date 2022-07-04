@@ -1,5 +1,5 @@
 #skills {
-    margin-top: 5rem;
+    margin-top: 10%;
 }
 
 #skill_content {
@@ -7,8 +7,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     row-gap: 3rem;
-    padding-top: 2rem;
     color: white;
+    margin-top: 30px;
 }
 
 #skill_content div {

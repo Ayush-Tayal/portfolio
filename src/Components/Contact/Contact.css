@@ -1,20 +1,21 @@
 #contact h1 {
     color: whitesmoke;
     text-align: center;
-    margin-top: 5rem;
-
+    margin-top: 10%;
 }
 
 #contact_section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 30px;
+    padding-bottom: 5%;
 }
 
-#google-map-code iframe{
+#google-map iframe{
     padding: 20px;
-    height: 60vh;
-    width: 40vw;
+    height: 50vh;
+    width: 30vw;
 }
 
 #contact-me input,textarea {
@@ -28,8 +29,9 @@
 }
 
 .textarea textarea{
-    width: 47vw;
+    width: 40vw;
     height: 20vh;
+    font-family: sans-serif;
 }
 
 #send-message {
@@ -42,5 +44,5 @@
     background-color: #2ca46d;
     margin-top: 20px;
     padding: 12px;
-    border-radius: 20px;
+    border-radius: 10px;
 }

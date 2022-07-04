@@ -7,12 +7,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 8%;
     width: 80%;
-    margin-top: 5rem;
+    margin-top: -3.5rem;
+    height: 100vh;
 }
 
 #home-content{
+    margin-left: 10px;
     color: whitesmoke;
 }
 
@@ -37,17 +38,16 @@
 }
 
 #profile-links svg {
-    /* background-color: #ffffff; */
-    /* color : black; */
     padding: 8px;
     border-radius: 50%;
     cursor: pointer;
     margin-right: 30px;
     font-size: 20px;
+    transition: transform 250ms ease;
 }
 
 #profile-links svg:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .git_icn{
