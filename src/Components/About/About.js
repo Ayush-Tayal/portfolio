@@ -3,21 +3,22 @@ import './About.css'
 import about from '../../Assests/about.png'
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import { Button } from '@mui/material'
-import { Flip } from 'react-reveal';
+import { Bounce, Fade } from 'react-reveal';
 
 const About = () => {
   return (
     <div id='about'>
       <div id='about-me'>
-        <Flip>
+        <Bounce>
           <h1> ABOUT ME </h1>
-        </Flip>
+        </Bounce>
           
-        
-        <p> Hi, Ayush Tayal this side from Delhi, completed my graduation in Bachelor degree. Beside this, I am 
-          trained in Web Development and love to code using MERN Stack.Currently I'm working as a Software 
-          Engineer at Mordor Intelligence and a type of person who is positive in every aspect of life.
-        </p>
+        <Fade left>
+          <p> Hi, Ayush Tayal this side from Delhi, completed my graduation in Bachelor degree. Beside this, I am 
+            trained in Web Development and love to code using MERN Stack.Currently I'm working as a Software 
+            Engineer at Mordor Intelligence and a type of person who is positive in every aspect of life.
+          </p>
+        </Fade>
 
         <div id='download-resume'>
           <Button 
@@ -32,9 +33,11 @@ const About = () => {
         </div>
 
       </div>
-      
+
       <div id='about-img'>
-        <img src={about} alt='about' />
+        <Fade right>
+          <img src={about} alt='about' />
+        </Fade>
       </div>
     </div>
 
