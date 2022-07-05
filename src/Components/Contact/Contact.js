@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { Button } from "@mui/material";
 import { displayNoti } from "../../notification";
-import { Flip, Fade, Bounce } from "react-reveal";
+import {Fade, Bounce } from "react-reveal";
 
 const Contact = () => {
   const form = useRef();
