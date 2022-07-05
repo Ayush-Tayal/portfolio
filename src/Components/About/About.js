@@ -29,7 +29,6 @@ const About = () => {
             Download Resume 
             <FileDownloadIcon/> 
           </Button>
-          
         </div>
 
       </div>

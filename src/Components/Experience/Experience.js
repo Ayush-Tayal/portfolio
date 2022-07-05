@@ -37,8 +37,8 @@ const Experience = () => {
           <h2> AccioJob - Software Developer Trainee </h2>
 
           <div className="exp-details">
-            <h5> 05/2021-01-2022 </h5>
-            <h5> Gurgaon, Haryana </h5>
+            <h5> 05/2021-01/2022 </h5>
+            <h5> Gurugram, Haryana </h5>
           </div>
 
           <div className="exp-about">

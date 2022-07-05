@@ -56,10 +56,10 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <input type="text" name="user_name" placeholder="Name" required  />
               <input type="text" name="user_email" placeholder="Email" required />
-              <input type="text" name="message" placeholder="Subject" required />
+              <input type="text" name="subject" placeholder="Subject" required />
 
               <div className="textarea">
-                <textarea placeholder="Type Your Message Here..." required />
+                <textarea name="message" placeholder="Type Your Message Here..." required />
               </div>
 
               <div id="send-message">
