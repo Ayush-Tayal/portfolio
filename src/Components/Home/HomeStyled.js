@@ -72,4 +72,21 @@ export const HomeContainerWrapper = styled.div`
     color: #bb001b;
     background-color: white;
   }
+
+  @media screen and (max-width: 768px) {
+    #home {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #img-icon {
+      margin: auto;
+    }
+
+    #img-icon img {
+      // margin : auto
+      height: 30vh;
+      border-radius: 50%;
+    }
+  }
 `;

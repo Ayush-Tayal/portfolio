@@ -37,4 +37,10 @@ export const AboutContainerWrapper = styled.div`
     padding: 15px;
     border-radius: 30px;
   }
+
+  @media screen and (max-width: 768px) {
+    #about-img {
+      display: none;
+    }
+  }
 `;

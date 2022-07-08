@@ -22,4 +22,11 @@ export const PublicationContainerWrapper = styled.div`
     border-radius: 15px;
     margin-top: 20px;
   }
+
+  @media screen and (max-width: 768px) {
+    #publication-info {
+      padding: 10px;
+      margin: 10px;
+    }
+  }
 `;

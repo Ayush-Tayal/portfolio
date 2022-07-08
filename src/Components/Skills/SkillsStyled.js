@@ -96,4 +96,11 @@ export const SkillsContainerWrapper = styled.div`
   .jira_icon {
     background-color: #1a74ed;
   }
+
+  @media screen and (max-width: 768px) {
+    #skill_content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 `;

@@ -1,7 +1,11 @@
 import React from "react";
 import { NavbarContainerWrapper } from "./NavbarStyled";
+import { CgMenuCheese } from "react-icons/cg";
 
 const Navbar = () => {
+  const handleMenuClick = () => {
+    console.log("Click");
+  };
   return (
     <NavbarContainerWrapper>
       <div id="navbar">
@@ -18,6 +22,16 @@ const Navbar = () => {
           <a href="#projects"> Projects </a>
           <a href="#publication"> Publication </a>
           <a href="#contact"> Contact </a>
+        </div>
+      </div>
+
+      <div id="mobile-navbar">
+        <div id="left-menu">
+          <a href="#"> AYUSH TAYAL </a>
+        </div>
+
+        <div id="right-menu">
+          <CgMenuCheese className="menu-icon" onClick={handleMenuClick} />
         </div>
       </div>
     </NavbarContainerWrapper>

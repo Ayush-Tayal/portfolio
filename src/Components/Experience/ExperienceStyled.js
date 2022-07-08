@@ -30,4 +30,13 @@ export const ExperienceContainerWrapper = styled.div`
     padding: 4px;
     text-align: justify;
   }
+
+  @media screen and (max-width: 768px) {
+    .exp {
+      background: #2d343e;
+      padding: 10px 30px;
+      margin: 20px 20px;
+      border-radius: 8px;
+    }
+  }
 `;

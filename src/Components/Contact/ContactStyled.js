@@ -50,4 +50,16 @@ export const ContactContainerWrapper = styled.div`
     padding: 12px;
     border-radius: 10px;
   }
+
+  @media screen and (max-width: 768px) {
+    #contact_section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #google-map iframe {
+      height: 50vh;
+      width: 90vw;
+    }
+  }
 `;

@@ -32,6 +32,34 @@ export const NavbarContainerWrapper = styled.div`
     padding-right: 20px;
   }
 
+  #mobile-navbar {
+    display: none;
+  }
+
   @media screen and (max-width: 768px) {
+    #mobile-navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #2ca46d;
+    }
+
+    #navbar {
+      display: none;
+    }
+
+    #left-menu a {
+      color: whitesmoke;
+      font-size: 24px;
+      // background-color: #2ca46d;
+      font-family: "Poppins";
+      font-weight: 900;
+    }
+
+    .menu-icon {
+      color: whitesmoke;
+      font-size: 25px;
+      cursor: pointer;
+    }
   }
 `;
