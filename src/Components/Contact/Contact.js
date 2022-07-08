@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { Button } from "@mui/material";
 import { displayNoti } from "../../notification";
-import {Fade, Bounce } from "react-reveal";
+import { Fade, Bounce } from "react-reveal";
 
 const Contact = () => {
   const form = useRef();
@@ -13,10 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_3bloojn",
-        "template_1zfb4zm",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "FwBmX8jlL6tn05t_v"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
@@ -33,7 +33,6 @@ const Contact = () => {
 
   return (
     <div id="contact">
-
       <Bounce>
         <h1> GET IN TOUCH </h1>
       </Bounce>
@@ -53,20 +52,23 @@ const Contact = () => {
         </Fade>
 
         <div id="contact-me">
-            <form ref={form} onSubmit={sendEmail}>
-              <input type="text" name="user_name" placeholder="Name" required  />
-              <input type="text" name="user_email" placeholder="Email" required />
-              <input type="text" name="subject" placeholder="Subject" required />
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder="Name" required />
+            <input type="text" name="user_email" placeholder="Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
 
-              <div className="textarea">
-                <textarea name="message" placeholder="Type Your Message Here..." required />
-              </div>
+            <div className="textarea">
+              <textarea
+                name="message"
+                placeholder="Type Your Message Here..."
+                required
+              />
+            </div>
 
-              <div id="send-message">
-                <Button type="submit"> Send Message </Button>
-              </div>
-            </form>
-
+            <div id="send-message">
+              <Button type="submit"> Send Message </Button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
