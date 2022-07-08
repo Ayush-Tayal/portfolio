@@ -1,29 +1,33 @@
-#experience {
+import styled from "styled-components";
+
+export const ExperienceContainerWrapper = styled.div`
+  #experience {
     color: white;
     padding-top: 3%;
-}
+  }
 
-.experience-heading {
+  .experience-heading {
     text-align: center;
-}
+  }
 
-.exp {
+  .exp {
     background: #2d343e;
     padding: 20px 50px;
-    margin : 50px 100px;
+    margin: 50px 100px;
     border-radius: 8px;
-}
+  }
 
-.exp h2 {
+  .exp h2 {
     margin-bottom: 6px;
-}
+  }
 
-.exp-details {
+  .exp-details {
     display: flex;
     justify-content: space-between;
-}
+  }
 
-.exp-about li {
+  .exp-about li {
     padding: 4px;
     text-align: justify;
-}
+  }
+`;

@@ -1,4 +1,7 @@
-#navbar {
+import styled from "styled-components";
+
+export const NavbarContainerWrapper = styled.div`
+  #navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,21 +12,26 @@
     top: 0;
     z-index: 2;
     background-color: #2ca46d;
-}
+    flex-wrap: wrap;
+  }
 
-#navbar a {
+  #navbar a {
     color: whitesmoke;
     font-size: 24px;
     background-color: #2ca46d;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: 900;
-}
+  }
 
-#left-nav a {
+  #left-nav a {
     font-weight: 800;
-}
+  }
 
-#right-nav a {
+  #right-nav a {
     font-weight: 500;
     padding-right: 20px;
-}
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+`;

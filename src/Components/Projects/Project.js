@@ -1,5 +1,4 @@
 import React from "react";
-import "./Project.css";
 import projects_data from "./Projects_Data";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -8,19 +7,21 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Bounce } from "react-reveal";
+import { ProjectsContainerWrapper } from "./ProjectStyled";
 
 const Project = () => {
   // console.log("projeect data", projects_data);
 
   return (
-    <div id="projects">
-      <Bounce>
-        <h1> PERSONAL PROJECTS </h1>
-      </Bounce>
+    <ProjectsContainerWrapper>
+      <div id="projects">
+        <Bounce>
+          <h1> PERSONAL PROJECTS </h1>
+        </Bounce>
 
-      <div id="projects_card">
-        {projects_data &&
-          projects_data.map((project, i) => (
+        <div id="projects_card">
+          {projects_data &&
+            projects_data.map((project, i) => (
               <Card sx={{ maxWidth: 345 }} key={i}>
                 <CardMedia
                   className="project_image"
@@ -66,9 +67,10 @@ const Project = () => {
                   </Button>
                 </CardActions>
               </Card>
-          ))}
+            ))}
+        </div>
       </div>
-    </div>
+    </ProjectsContainerWrapper>
   );
 };
 

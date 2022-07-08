@@ -1,32 +1,34 @@
-#projects {
+import styled from "styled-components";
+
+export const ProjectsContainerWrapper = styled.div`
+  #projects {
     color: white;
     padding-top: 5%;
+  }
 
-}
-
-#projects h1 {
+  #projects h1 {
     text-align: center;
-}
+  }
 
-#projects_card {
+  #projects_card {
     display: grid;
     grid-auto-flow: column;
     gap: 4px;
     align-items: center;
     justify-items: center;
     margin-top: 30px;
-}
+  }
 
-.project_image {
+  .project_image {
     padding-top: 10px;
-    
-}
+  }
 
-.project_title {
+  .project_title {
     padding: 20px;
-}
+  }
 
-.project_button {
+  .project_button {
     display: flex;
     justify-content: space-around;
-}
+  }
+`;

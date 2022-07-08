@@ -24,7 +24,7 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "5.0.0",
     "react-tsparticles": "^2.1.0",
-    "styled-components": "^5.3.3",
+    "styled-components": "^5.3.5",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
