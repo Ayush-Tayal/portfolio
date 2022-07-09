@@ -42,6 +42,7 @@ export const NavbarContainerWrapper = styled.div`
       justify-content: space-between;
       padding: 10px;
       background-color: #2ca46d;
+      z-index: 2;
     }
 
     #navbar {

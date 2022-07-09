@@ -58,8 +58,17 @@ export const ContactContainerWrapper = styled.div`
     }
 
     #google-map iframe {
-      height: 50vh;
-      width: 90vw;
+      height: 40vh;
+      width: 85vw;
+    }
+
+    #contact-me {
+      text-align: center;
+    }
+
+    #contact-me input,
+    .textarea textarea {
+      width: 80%;
     }
   }
 `;

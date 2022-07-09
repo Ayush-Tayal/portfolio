@@ -39,6 +39,11 @@ export const AboutContainerWrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
+    #about-me {
+      padding: 10px;
+      width: 80%;
+    }
+
     #about-img {
       display: none;
     }

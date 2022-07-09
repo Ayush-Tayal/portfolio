@@ -28,4 +28,11 @@ export const EducationContainerWrapper = styled.div`
   .educ h3 {
     font-weight: 600;
   }
+
+  @media screen and (max-width: 768px) {
+    .educ {
+      margin-bottom: 30px;
+      width: 80%;
+    }
+  }
 `;

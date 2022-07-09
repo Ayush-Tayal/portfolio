@@ -77,16 +77,15 @@ export const HomeContainerWrapper = styled.div`
     #home {
       display: flex;
       flex-direction: column;
-    }
-
-    #img-icon {
       margin: auto;
     }
 
     #img-icon img {
-      // margin : auto
       height: 30vh;
-      border-radius: 50%;
+    }
+
+    #home-content {
+      margin: 20px;
     }
   }
 `;
