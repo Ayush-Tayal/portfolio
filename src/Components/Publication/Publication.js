@@ -14,11 +14,10 @@ const Publication = () => {
         <Flip left>
           <div id="publication-info">
             <h2> HYPERLOOP TRANSPORTATION SYSTEM </h2>
-            <h5>
-              {" "}
+            <h4>
               The research paper is all about the 5th mode of transportation
               i.e., Hyperloop and published at IJRESM.
-            </h5>
+            </h4>
 
             <Button
               style={{ backgroundColor: "#2ca46d", color: "whitesmoke" }}

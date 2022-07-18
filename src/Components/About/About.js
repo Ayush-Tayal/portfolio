@@ -18,10 +18,10 @@ const About = () => {
             <p>
               {" "}
               Hi, Ayush Tayal this side from Delhi, completed my graduation in
-              Bachelor degree. Beside this, I am trained in Web Development and
-              love to code using MERN Stack.Currently I'm working as a Software
-              Engineer at Mordor Intelligence and a type of person who is
-              positive in every aspect of life.
+              Bachelor degree. Besides this, I am trained in Web Development and
+              love to code using MERN Stack. Currently, I'm working as a
+              Software Engineer at Mordor Intelligence and am the type of person
+              who is positive in every aspect of life.
             </p>
           </Fade>
 

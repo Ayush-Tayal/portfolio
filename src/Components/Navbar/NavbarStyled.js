@@ -43,6 +43,11 @@ export const NavbarContainerWrapper = styled.div`
       padding: 10px;
       background-color: #2ca46d;
       z-index: 2;
+      align-items: center;
+      top: 0;
+      z-index: 2;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
     }
 
     #navbar {

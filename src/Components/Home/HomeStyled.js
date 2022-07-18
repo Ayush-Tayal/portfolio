@@ -78,14 +78,25 @@ export const HomeContainerWrapper = styled.div`
       display: flex;
       flex-direction: column;
       margin: auto;
+      height: 85vh;
+      padding-top: 6vh;
+      padding-bottom: 5vh;
     }
 
     #img-icon img {
-      height: 30vh;
+      height: 35vh;
     }
 
     #home-content {
       margin: 20px;
+    }
+
+    #profile-links {
+      text-align: center;
+    }
+
+    #profile-links svg {
+      margin-bottom: 20px;
     }
   }
 `;
