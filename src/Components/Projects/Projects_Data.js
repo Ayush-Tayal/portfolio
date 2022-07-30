@@ -19,7 +19,7 @@ const ProjectsData = [
 
   {
     id: 3,
-    thumbnail: 'https://w7.pngwing.com/pngs/273/74/png-transparent-online-chat-livechat-chat-room-baycreative-inc-google-icon-blue-text-logo.png',
+    thumbnail:'https://w0.peakpx.com/wallpaper/693/621/HD-wallpaper-chat-bubble-neon-icon-blue-background-neon-symbols-chat-bubble-neon-icons-chat-bubble-sign-computer-signs-chat-bubble-icon-computer-icons-thumbnail.jpg',
     title: 'Realtime Chatting',
     desc : '',
     github: 'https://github.com/Ayush-Tayal/Chat-App',

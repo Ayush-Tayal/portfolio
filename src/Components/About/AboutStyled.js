@@ -25,7 +25,6 @@ export const AboutContainerWrapper = styled.div`
   }
 
   #about-img img {
-    /* margin-top: 2rem; */
     height: 50vh;
   }
 
@@ -36,6 +35,11 @@ export const AboutContainerWrapper = styled.div`
     margin-top: 20px;
     padding: 15px;
     border-radius: 30px;
+  }
+
+  .download_icon {
+    margin-left:20px;
+    font-size : 20px
   }
 
   @media screen and (max-width: 768px) {

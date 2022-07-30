@@ -4,6 +4,9 @@ import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import { Button } from "@mui/material";
 import { Bounce, Fade } from "react-reveal";
 import { AboutContainerWrapper } from "./AboutStyled";
+import Resume from '../../Assests/resume.pdf'
+import { BsCloudArrowDownFill} from "react-icons/bs";
+
 
 const About = () => {
   return (
@@ -28,11 +31,11 @@ const About = () => {
           <div id="download-resume">
             <Button
               variant="contained"
-              href="../../Assests/resume.pdf"
-              download
+              href={Resume}
+              download="Ayush's Resume"
             >
               Download Resume
-              <FileDownloadIcon />
+              <BsCloudArrowDownFill className="download_icon" />
             </Button>
           </div>
         </div>

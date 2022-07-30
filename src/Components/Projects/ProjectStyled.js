@@ -20,19 +20,21 @@ export const ProjectsContainerWrapper = styled.div`
     margin-top: 30px;
   }
 
-  .project_image {
-    padding-top: 10px;
+  .card div{
+    padding-bottom :10px;
   }
 
   .project_title {
-    padding: 20px;
+    text-align:center;
+    padding: 10px;
+    font-weight : 600;
   }
 
   .project_button {
     display: flex;
     justify-content: space-around;
   }
-
+  
   @media screen and (max-width: 768px) {
     #projects_card {
       display: inline;
@@ -40,7 +42,6 @@ export const ProjectsContainerWrapper = styled.div`
 
     .MuiPaper-root {
       margin: 0 auto 30px auto;
-      // margin-bottom: 50px;
     }
   }
 `;
