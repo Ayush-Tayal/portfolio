@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavbarContainerWrapper } from "./NavbarStyled";
 import { CgMenuCheese } from "react-icons/cg";
+import HamburgerMenuData from "./HamburgerMenu";
+import { MdCloseFullscreen } from "react-icons/md";
 
 const Navbar = () => {
-  const handleMenuClick = () => {
-    console.log("Click");
+  const [showHamnburgerMenu, setShowHamnburgerMenu] = useState(false);
+
+  const handleHamnburgerMenu = () => {
+    setShowHamnburgerMenu(!showHamnburgerMenu);
   };
+
   return (
     <NavbarContainerWrapper>
       <div id="navbar">
@@ -13,27 +18,35 @@ const Navbar = () => {
           <a href="#"> AYUSH TAYAL </a>
         </div>
 
-        <div id="right-nav">
-          <a href="#"> Home </a>
-          <a href="#about"> About </a>
-          <a href="#skills"> Skills </a>
-          <a href="#education"> Education </a>
-          <a href="#experience"> Experience </a>
-          <a href="#projects"> Projects </a>
-          <a href="#publication"> Publication </a>
-          <a href="#contact"> Contact </a>
+        <div id="menu-bars">
+          {!showHamnburgerMenu ? (
+            <CgMenuCheese
+              className="hamburger_icon"
+              onClick={handleHamnburgerMenu}
+            />
+          ) : (
+            <MdCloseFullscreen
+              className="close_icon"
+              onClick={handleHamnburgerMenu}
+            />
+          )}
         </div>
       </div>
 
-      <div id="mobile-navbar">
-        <div id="left-menu">
-          <a href="#"> AYUSH TAYAL </a>
-        </div>
-
-        <div id="right-menu">
-          <CgMenuCheese className="menu-icon" onClick={handleMenuClick} />
-        </div>
-      </div>
+      <nav className={showHamnburgerMenu ? "nav-menu active" : "nav-menu"}>
+        <ul className="nav-menu-items" onClick={handleHamnburgerMenu}>
+          {HamburgerMenuData.map((item, index) => {
+            return (
+              <li key={index} className={item.className}>
+                <a href={item.path}>
+                  {item.icon}
+                  <span>{item.title}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
     </NavbarContainerWrapper>
   );
 };

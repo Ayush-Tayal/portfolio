@@ -1,23 +1,22 @@
 import styled from "styled-components";
+import bg from "../../Assests/bg.jpg";
 
 export const NavbarContainerWrapper = styled.div`
   #navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 80px;
     margin-bottom: 30px;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 10;
     background-color: #2ca46d;
-    flex-wrap: wrap;
   }
 
   #navbar a {
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 26px;
     background-color: #2ca46d;
     font-family: "Poppins";
     font-weight: 900;
@@ -27,45 +26,77 @@ export const NavbarContainerWrapper = styled.div`
     font-weight: 800;
   }
 
-  #right-nav a {
-    font-weight: 500;
-    padding-right: 20px;
+  .hamburger_icon,
+  .close_icon {
+    color: whitesmoke;
+    font-size: 30px;
+    cursor: pointer;
   }
 
-  #mobile-navbar {
-    display: none;
+  .nav-menu {
+    background-color: #003153;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 2000ms;
+  }
+
+  .nav-menu.active {
+    padding-top: 6%;
+    right: 0;
+    transition: 450ms;
+    z-index: 1;
+  }
+
+  .nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    padding-bottom: 8px;
+  }
+
+  .nav-text a {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: "Poppins";
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 5px;
+  }
+
+  .nav-text a:hover {
+    background-color: #2ca46d;
+    transform: scale(1.1);
+  }
+
+  .nav-menu-items {
+    width: 100%;
+  }
+
+  span {
+    margin-left: 16px;
   }
 
   @media screen and (max-width: 768px) {
-    #mobile-navbar {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px;
-      background-color: #2ca46d;
-      z-index: 2;
-      align-items: center;
-      top: 0;
-      z-index: 2;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
-
     #navbar {
-      display: none;
+      padding : 20px 40px;
     }
 
-    #left-menu a {
-      color: whitesmoke;
-      font-size: 24px;
-      // background-color: #2ca46d;
-      font-family: "Poppins";
-      font-weight: 900;
+    .nav-menu {
+      width:180px;
     }
 
-    .menu-icon {
-      color: whitesmoke;
-      font-size: 25px;
-      cursor: pointer;
+    .nav-menu.active {
+      padding-top: 20%;
     }
   }
 `;
