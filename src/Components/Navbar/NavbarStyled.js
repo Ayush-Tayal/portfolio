@@ -6,7 +6,7 @@ export const NavbarContainerWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px;
+    padding: 12px 80px;
     margin-bottom: 30px;
     position: sticky;
     top: 0;
@@ -34,7 +34,9 @@ export const NavbarContainerWrapper = styled.div`
   }
 
   .nav-menu {
-    background-color: #003153;
+    // background-color: #003153;
+    background-image : url(${bg});
+    background-size : 20px auto;
     width: 250px;
     height: 100vh;
     display: flex;
@@ -88,7 +90,7 @@ export const NavbarContainerWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     #navbar {
-      padding : 20px 40px;
+      padding : 12px 40px;
     }
 
     .nav-menu {
