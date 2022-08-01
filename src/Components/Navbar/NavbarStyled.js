@@ -35,8 +35,9 @@ export const NavbarContainerWrapper = styled.div`
 
   .nav-menu {
     // background-color: #003153;
-    background-image : url(${bg});
-    background-size : 20px auto;
+    // background-image : url(${bg});
+    // background-size : 20px auto;
+    background-color: #1ca16a;
     width: 250px;
     height: 100vh;
     display: flex;
@@ -76,7 +77,7 @@ export const NavbarContainerWrapper = styled.div`
   }
 
   .nav-text a:hover {
-    background-color: #2ca46d;
+    background-color: #003153;
     transform: scale(1.1);
   }
 
