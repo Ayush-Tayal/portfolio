@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import bg from "../../Assests/bg.jpg";
 
 export const NavbarContainerWrapper = styled.div`
   #navbar {
@@ -34,9 +33,6 @@ export const NavbarContainerWrapper = styled.div`
   }
 
   .nav-menu {
-    // background-color: #003153;
-    // background-image : url(${bg});
-    // background-size : 20px auto;
     background-color: #1ca16a;
     width: 250px;
     height: 100vh;

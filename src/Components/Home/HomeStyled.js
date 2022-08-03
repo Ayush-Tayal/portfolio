@@ -73,6 +73,21 @@ export const HomeContainerWrapper = styled.div`
     background-color: white;
   }
 
+  .scroll_to_top {
+    color: #2ca46d;
+    font-size: 60px;
+    position: fixed;
+    bottom: 6%;
+    right: 2%;
+    margin-left: 93%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .scroll_to_top:hover {
+    transform: scale(1.2);
+  }
+
   @media screen and (max-width: 768px) {
     #home {
       display: flex;
@@ -98,5 +113,6 @@ export const HomeContainerWrapper = styled.div`
     #profile-links svg {
       margin-bottom: 20px;
     }
+
   }
 `;
