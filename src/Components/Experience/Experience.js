@@ -24,14 +24,15 @@ const Experience = () => {
 
               <div className="exp-about">
                 <li>
-                  Worked in an agile team to add new features and fix existing
-                  bugs in the Lorien project.
+                  Primary Developer for the IW which is the Internal Workflow Project. 
                 </li>
                 <li>
-                  Responsible for the Designing and adding new features to the
-                  IC project.
+                  Worked in an agile team to add new templates and styles in the Lorien, Website.
                 </li>
-                <li>Tech Stack: - React, Redux, ANTD, Git, Bitbucket, Jira</li>
+                <li>
+                  Responsible for the Designing, maintaining and adding new features to the Digitizer, IC.
+                </li>
+                <li>Tech Stack: - React, Redux, ANTD, EJS, NodeJs, Git, Bitbucket, Jira</li>
               </div>
             </div>
           </Zoom>
