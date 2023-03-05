@@ -7,8 +7,6 @@ export const NavbarContainerWrapper = styled.div`
     align-items: center;
     padding: 12px 80px;
     margin-bottom: 30px;
-    position: sticky;
-    top: 0;
     z-index: 10;
     background-color: #2ca46d;
   }
@@ -47,7 +45,7 @@ export const NavbarContainerWrapper = styled.div`
   .nav-menu.active {
     padding-top: 6%;
     right: 0;
-    transition: 450ms;
+    transition: 350ms;
     z-index: 1;
   }
 
@@ -87,11 +85,11 @@ export const NavbarContainerWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     #navbar {
-      padding : 12px 40px;
+      padding: 12px 40px;
     }
 
     .nav-menu {
-      width:180px;
+      width: 180px;
     }
 
     .nav-menu.active {
