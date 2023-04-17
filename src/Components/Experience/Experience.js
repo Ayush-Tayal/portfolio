@@ -15,7 +15,7 @@ const Experience = () => {
         <div id="experience-card">
           <Zoom top>
             <div className="exp">
-              <h2> Mordor intelligence - Junior Software Engineer </h2>
+              <h2> Mordor intelligence - Software Engineer </h2>
 
               <div className="exp-details">
                 <h5> 01/2022-Present </h5>
