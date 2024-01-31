@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../Assests/icon.jpg";
+import logo from "../../Assests/icon.png";
 import Typewriter from "typewriter-effect";
 import { SiGithub, SiGmail } from "react-icons/si";
 import { AiFillLinkedin } from "react-icons/ai";
