@@ -3,8 +3,9 @@ import { AiFillHtml5 } from "react-icons/ai";
 import {
   SiCss3,
   SiJavascript,
-  SiMaterialui,
+  SiMui,
   SiAntdesign,
+  SiMongodb,
   SiRedux,
   SiExpress,
   SiFirebase,
@@ -27,6 +28,31 @@ const Skills = () => {
         <Zoom>
           <div id="skill_content">
             <div>
+              <SiJavascript className="skill_icon js_icon" />
+              <h2> JavaScript </h2>
+            </div>
+
+            <div>
+              <FaReact className="skill_icon react_icon" />
+              <h2> ReactJs </h2>
+            </div>
+
+            <div>
+              <IoLogoNodejs className="skill_icon node_icon" />
+              <h2> NodeJs </h2>
+            </div>
+
+            <div>
+              <SiExpress className="skill_icon express_icon" />
+              <h2> ExpressJs </h2>
+            </div>
+
+            <div>
+              <SiMongodb className="skill_icon mongo_icon" />
+              <h2> MongoDB </h2>
+            </div>
+
+            <div>
               <AiFillHtml5 className="skill_icon html_icon" />
               <h2> HTML </h2>
             </div>
@@ -42,17 +68,7 @@ const Skills = () => {
             </div>
 
             <div>
-              <SiJavascript className="skill_icon js_icon" />
-              <h2> JavaScript </h2>
-            </div>
-
-            <div>
-              <FaReact className="skill_icon react_icon" />
-              <h2> ReactJs </h2>
-            </div>
-
-            <div>
-              <SiMaterialui className="skill_icon mui_icon" />
+              <SiMui className="skill_icon mui_icon" />
               <h2> Material-UI </h2>
             </div>
 
@@ -66,15 +82,7 @@ const Skills = () => {
               <h2> Redux </h2>
             </div>
 
-            <div>
-              <IoLogoNodejs className="skill_icon node_icon" />
-              <h2> NodeJs </h2>
-            </div>
 
-            <div>
-              <SiExpress className="skill_icon express_icon" />
-              <h2> ExpressJs </h2>
-            </div>
 
             <div>
               <SiFirebase className="skill_icon firebase_icon" />

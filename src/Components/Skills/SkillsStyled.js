@@ -78,6 +78,10 @@ export const SkillsContainerWrapper = styled.div`
     color: black;
   }
 
+  .mongo_icon {
+    background-color: #061621;
+  }
+
   .firebase_icon {
     background-color: #ffffff;
     color: #f5820d;
