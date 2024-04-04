@@ -8,7 +8,7 @@ const Experience = () => {
       <div id="experience">
         <div id="experience">
           <Bounce>
-            <h1 className="experience-heading"> EXPERIENCE </h1>
+            <h1 className="experience-heading">WORK EXPERIENCE </h1>
           </Bounce>
         </div>
 
@@ -24,15 +24,22 @@ const Experience = () => {
 
               <div className="exp-about">
                 <li>
-                  Primary Developer for the IW which is the Internal Workflow Project. 
+                  Lead developer for the MI official Website utilizing EJS to streamline website creation.
                 </li>
+
                 <li>
-                  Worked in an agile team to add new templates and styles in the Lorien, Website.
+                  Worked on a project called Lorien, aimed to build Hubs and provide an intuitive way for the analyst to gather and organize the data.
                 </li>
+
                 <li>
-                  Responsible for the Designing, maintaining and adding new features to the Digitizer, IC.
+                  Experienced in working with IW, Digitizer and IC projects, contributing to the internal workflow development process.
                 </li>
-                <li>Tech Stack: - React, Redux, ANTD, EJS, NodeJs, Git, Bitbucket, Jira</li>
+
+                <li>
+                  Having experience working on nearly all of our project demonstrating exceptional leadership and teamwork abilities during the dev process.
+                </li>
+
+                <li>Tech Stack: JS, ReactJS, NodeJS, ExpressJS, EJS Template, ANTD, MongoDB and many more.</li>
               </div>
             </div>
           </Zoom>
@@ -47,10 +54,10 @@ const Experience = () => {
               </div>
 
               <div className="exp-about">
-                <li>Full Stack Development Training.</li>
-                <li>For deployment: GitHub Pages, Netlify is used.</li>
+                <li>Completed Full Stack Development Internship.</li>
+                <li>Developed multiple projects using MERN Tech Stack.</li>
                 <li>
-                  Build projects using technologies like Vanilla JS, ReactJs.
+                  Successfully deployed projects using Githu Pages. Netlify also used.
                 </li>
               </div>
             </div>

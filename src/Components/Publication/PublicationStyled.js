@@ -12,6 +12,7 @@ export const PublicationContainerWrapper = styled.div`
 
   .publication-heading {
     text-align: center;
+    color:#66B3FF;
   }
 
   #publication-info {

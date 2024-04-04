@@ -20,11 +20,9 @@ const About = () => {
           <Fade left>
             <p>
               {" "}
-              Hi, Ayush Tayal this side from Delhi, completed my graduation in
-              Bachelor degree. Besides this, I am trained in Web Development and
-              love to code using MERN Stack. Currently, I'm working as a
-              Software Engineer at Mordor Intelligence and am the type of person
-              who is positive in every aspect of life.
+              Hey there, I'm Ayush Tayal, a skilled Software Engineer proficient in MERN Stack and modern web tech. I've built e-commerce apps, chat applications, and more, using Redux, Material-UI, Ant Design, and Firebase. My research on the Hyperloop Transportation System was published during my Bachelor's degree. Currently, I'm at Mordor Intelligence, contributing to various projects like IW, Lorien, and Main Website. 
+              <br/>
+              Let's connect and create innovative web solutions together!
             </p>
           </Fade>
 

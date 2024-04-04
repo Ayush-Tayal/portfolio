@@ -15,6 +15,7 @@ export const EducationContainerWrapper = styled.div`
 
   .education-heading {
     text-align: center;
+    color:#66B3FF;
   }
 
   .educ {

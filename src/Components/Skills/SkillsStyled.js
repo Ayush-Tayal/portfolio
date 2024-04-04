@@ -22,7 +22,7 @@ export const SkillsContainerWrapper = styled.div`
 
   .skill-heading {
     text-align: center;
-    color: whitesmoke;
+    color:#66B3FF;
   }
 
   .skill_icon {

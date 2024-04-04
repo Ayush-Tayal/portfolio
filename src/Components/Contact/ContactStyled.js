@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const ContactContainerWrapper = styled.div`
   #contact h1 {
-    color: whitesmoke;
     text-align: center;
     padding-top: 5%;
+    color:#66B3FF;
   }
 
   #contact_section {

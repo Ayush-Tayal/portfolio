@@ -10,6 +10,7 @@ export const AboutContainerWrapper = styled.div`
 
   #about-me h1 {
     font-weight: 700;
+    color:#66B3FF;
   }
 
   #about-me {

@@ -7,7 +7,7 @@ const Education = () => {
     <EducationContainerWrapper>
       <div id="education">
         <Bounce>
-          <h1 className="education-heading"> MY EDUCATION </h1>
+          <h1 className="education-heading"> ACADEMICS AND CREDENTIALS </h1>
         </Bounce>
 
         <div id="education-card">

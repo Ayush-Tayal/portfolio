@@ -8,6 +8,7 @@ export const ExperienceContainerWrapper = styled.div`
 
   .experience-heading {
     text-align: center;
+    color:#66B3FF;
   }
 
   .exp {

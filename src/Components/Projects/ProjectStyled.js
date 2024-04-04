@@ -8,6 +8,7 @@ export const ProjectsContainerWrapper = styled.div`
 
   #projects h1 {
     text-align: center;
+    color:#66B3FF;
   }
 
   #projects_card {
