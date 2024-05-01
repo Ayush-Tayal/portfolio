@@ -4,7 +4,7 @@ import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import { Button } from "@mui/material";
 import { Bounce, Fade } from "react-reveal";
 import { AboutContainerWrapper } from "./AboutStyled";
-import Resume from '../../Assests/resume.pdf'
+// import Resume from '../../Assests/resume.pdf'
 import { BsCloudArrowDownFill} from "react-icons/bs";
 
 
@@ -26,16 +26,16 @@ const About = () => {
             </p>
           </Fade>
 
-          <div id="download-resume">
+          {/* <div id="download-resume">
             <Button
               variant="contained"
-              href={Resume}
+              href=''
               download="Ayush's Resume"
             >
               Download Resume
               <BsCloudArrowDownFill className="download_icon" />
             </Button>
-          </div>
+          </div> */}
         </div>
 
         <div id="about-img">

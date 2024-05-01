@@ -33,7 +33,7 @@ export const ContactContainerWrapper = styled.div`
   }
 
   .textarea textarea {
-    width: 40vw;
+    width: 47vw;
     height: 20vh;
     font-family: sans-serif;
   }

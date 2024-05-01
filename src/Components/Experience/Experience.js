@@ -24,19 +24,20 @@ const Experience = () => {
 
               <div className="exp-about">
                 <li>
-                  Lead developer for the MI official Website utilizing EJS to streamline website creation.
+                  Led the dev for the MI official Website serving 60k daily users, leveraging EJS for streamlined creation and optimal
+                  performance and UX.
                 </li>
 
                 <li>
-                  Worked on a project called Lorien, aimed to build Hubs and provide an intuitive way for the analyst to gather and organize the data.
+                  Led a significantly improvement Core Web Vitals (CWV) score by 40 points while maintaining a performance rating of 80+.
                 </li>
 
                 <li>
-                  Experienced in working with IW, Digitizer and IC projects, contributing to the internal workflow development process.
+                  Made impactful contributions to projects IW, Digitizer, Lorien and IC, resulting in a notable 20% increase in the daily leads.
                 </li>
 
                 <li>
-                  Having experience working on nearly all of our project demonstrating exceptional leadership and teamwork abilities during the dev process.
+                  Demonstrated leadership and teamwork abilities through involvement in all core projects.
                 </li>
 
                 <li>Tech Stack: JS, ReactJS, NodeJS, ExpressJS, EJS Template, ANTD, MongoDB and many more.</li>
@@ -54,10 +55,10 @@ const Experience = () => {
               </div>
 
               <div className="exp-about">
-                <li>Completed Full Stack Development Internship.</li>
-                <li>Developed multiple projects using MERN Tech Stack.</li>
+                <li>Completed an intensive Full Stack Development Internship.</li>
+                <li>Developed diverse projects from scratch including e-commerce, realtime chatting, showcasing expertise in MERN Stack.</li>
                 <li>
-                  Successfully deployed projects using Githu Pages. Netlify also used.
+                  Effectively deployed projects on Github Pages, Netlify and Heroku ensuring seamless accessibility.
                 </li>
               </div>
             </div>
