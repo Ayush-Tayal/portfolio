@@ -14,28 +14,27 @@ export const ContactContainerWrapper = styled.div`
     margin-top: 30px;
     padding-bottom: 5%;
   }
-
-  #google-map iframe {
-    padding: 20px;
-    height: 50vh;
-    width: 30vw;
-  }
-
-  #contact-me input,
-  textarea {
+  #contact-me input,textarea {
     text-decoration: none;
     outline: none;
     padding: 15px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
+    border: none;
     color: whitesmoke;
     background-color: #2d343e;
   }
 
   .textarea textarea {
-    width: 47vw;
-    height: 20vh;
+    width: 93%;
+    height: 15vh;
     font-family: sans-serif;
+    textarea: none;
+    resize:none;
+  }
+
+  #contact-me input::placeholder,textarea::placeholder {
+    color: white;
   }
 
   #send-message {
@@ -66,8 +65,7 @@ export const ContactContainerWrapper = styled.div`
       text-align: center;
     }
 
-    #contact-me input,
-    .textarea textarea {
+    #contact-me input,.textarea textarea {
       width: 80%;
     }
   }

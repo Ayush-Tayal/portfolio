@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const HomeContainerWrapper = styled.div`
   #img-icon img {
-    height: 60vh;
-    border-radius: 50%;
+    height: 80vh;
   }
 
   #home {

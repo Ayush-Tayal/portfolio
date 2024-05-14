@@ -27,8 +27,14 @@ export const SkillsContainerWrapper = styled.div`
 
   .skill_icon {
     font-size: 50px;
-    padding: 15px;
+    padding: 8px;
     border-radius: 50%;
+    cursor:pointer;
+    transition: transform .2s;
+  }
+
+  .skill_icon:hover{
+    transform:scale(1.5);
   }
 
   .html_icon {

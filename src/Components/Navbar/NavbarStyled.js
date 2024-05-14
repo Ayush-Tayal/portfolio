@@ -6,7 +6,7 @@ export const NavbarContainerWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 12px 80px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     z-index: 10;
     background-color: #2ca46d;
   }
@@ -43,7 +43,7 @@ export const NavbarContainerWrapper = styled.div`
   }
 
   .nav-menu.active {
-    padding-top: 6%;
+    padding-top: 3%;
     right: 0;
     transition: 350ms;
     z-index: 1;

@@ -19,7 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 200) {
+      if (window.pageYOffset > 400) {
         setIsScrollVisible(true);
       } else {
         setIsScrollVisible(false);
@@ -49,9 +49,9 @@ const Home = () => {
 
               <Typewriter
                 options={{
-                  strings: ["Software Engineer", "MERN Stack Developer"],
+                  strings: ["Software Engineer", "MERN Stack Developer", "FULL Stack Developer"],
                   autoStart: true,
-                  delay: 100,
+                  delay: 50,
                   loop: true,
                 }}
               />

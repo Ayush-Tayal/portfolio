@@ -14,7 +14,7 @@ import Education from "./Components/Education/Education";
 const myStyle = {
   backgroundImage: `url(${bg})`,
   backgroundRepeat: "space",
-  backgroundSize: "6px auto",
+  backgroundSize: "2.01px auto",
 };
 
 function App() {
