@@ -32,7 +32,8 @@ export const HomeContainerWrapper = styled.div`
   }
 
   .Typewriter {
-    text-align: center;
+    text-align: start;
+    margin-left:50px;
   }
 
   #profile-links {
@@ -49,7 +50,7 @@ export const HomeContainerWrapper = styled.div`
   }
 
   #profile-links svg:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
   }
 
   .git_icn {
@@ -64,7 +65,11 @@ export const HomeContainerWrapper = styled.div`
 
   .ph_icn {
     color: #ffffff;
-    background-color: #00c3005c;
+    background-color: #1794EB;
+  }
+  .whatsapp_icn {
+    background-color: #54CA45;
+    color: #ffffff;
   }
 
   .mail_icn {

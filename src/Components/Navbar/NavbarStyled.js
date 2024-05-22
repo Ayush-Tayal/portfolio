@@ -23,16 +23,24 @@ export const NavbarContainerWrapper = styled.div`
     font-weight: 800;
   }
 
-  .hamburger_icon,
-  .close_icon {
+  .hamburger_icon, close_icon {
     color: whitesmoke;
     font-size: 30px;
     cursor: pointer;
   }
+  
+  #menu-bars {
+    z-index: 20;
+    color: whitesmoke;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+  }
 
   .nav-menu {
     background-color: #1ca16a;
-    width: 250px;
+    width: 20%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -45,7 +53,7 @@ export const NavbarContainerWrapper = styled.div`
   .nav-menu.active {
     padding-top: 3%;
     right: 0;
-    transition: 350ms;
+    transition: 400ms;
     z-index: 1;
   }
 
@@ -94,6 +102,9 @@ export const NavbarContainerWrapper = styled.div`
 
     .nav-menu.active {
       padding-top: 20%;
+    }
+    .nav-menu-items {
+      padding-left: 10px;
     }
   }
 `;

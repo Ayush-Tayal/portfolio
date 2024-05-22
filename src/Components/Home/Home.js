@@ -6,6 +6,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { HomeContainerWrapper } from "./HomeStyled";
 import { IoIosArrowDropupCircle } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Home = () => {
   const [isScrollVisible, setIsScrollVisible] = useState(false);
@@ -58,9 +59,17 @@ const Home = () => {
             </div>
 
             <div id="profile-links">
-              <SiGithub
-                className="home_icons git_icn"
-                onClick={() => window.open("https://github.com/Ayush-Tayal")}
+              <SiGmail
+                className="home_icons mail_icn"
+                onClick={() => window.open("mailto:ayushtayal1111@gmail.com")}
+              />
+              <BsFillTelephoneFill
+                className="home_icons ph_icn"
+                onClick={() => window.open("tel:+91-817-852-4253")}
+              />
+              <FaWhatsapp
+                className="home_icons whatsapp_icn"
+                onClick={() => window.open('https://wa.me/918178524253')}
               />
               <AiFillLinkedin
                 className="home_icons ldn_icn"
@@ -68,16 +77,13 @@ const Home = () => {
                   window.open(
                     "https://www.linkedin.com/in/ayush-tayal-4a962b18a/"
                   )
-                }
+              }/>
+              <SiGithub
+                className="home_icons git_icn"
+                onClick={() => window.open("https://github.com/Ayush-Tayal")}
               />
-              <BsFillTelephoneFill
-                className="home_icons ph_icn"
-                onClick={() => window.open("tel:+91-817-852-4253")}
-              />
-              <SiGmail
-                className="home_icons mail_icn"
-                onClick={() => window.open("mailto:ayushtayal1111@gmail.com")}
-              />
+             
+             
             </div>
           </div>
         </div>
