@@ -15,7 +15,7 @@ const Experience = () => {
         <div id="experience-card">
           <Zoom top>
             <div className="exp">
-              <h2> Mordor intelligence - Software Engineer </h2>
+              <h2> Mordor intelligence | Software Engineer </h2>
 
               <div className="exp-details">
                 <h5> 01/2022-Present </h5>
@@ -24,30 +24,34 @@ const Experience = () => {
 
               <div className="exp-about">
                 <li>
-                  Led the dev for the MI official Website serving 60k daily users, leveraging EJS for streamlined creation and optimal
-                  performance and UX.
+                  Led development of multiple modules for the new company website using Next.js, improving load performance by 30%.
                 </li>
 
                 <li>
-                  Led a significantly improvement Core Web Vitals (CWV) score by 40 points while maintaining a performance rating of 80+.
+                  Wrote automation and utility scripts that reduced development time by 30%.
                 </li>
 
                 <li>
-                  Made impactful contributions to projects IW, Digitizer, Lorien and IC, resulting in a notable 20% increase in the daily leads.
+                  Spearheaded the revamp of the Official Website (120K+ daily users) using EJS, achieving 25% faster page loads and enhanced UX.
                 </li>
 
                 <li>
-                  Demonstrated leadership and teamwork abilities through involvement in all core projects.
+                  Collaborated with business stakeholders to gather requirements and led a team of 2–3 junior developers, delivering features with
+                  95% on-time rate.
                 </li>
 
-                <li>Tech Stack: JS, ReactJS, NodeJS, ExpressJS, EJS Template, ANTD, MongoDB and many more.</li>
+                <li>Implemented email verification on lead forms, reducing database load from unverified entries by 40%.</li>
+              
+                <li>Drove a 40-point boost in Core Web Vitals (CWV) scores, maintaining a performance score above 90.</li>
+
+                <li>Leveraged VWO for A/B testing to enhance UX and boost qualified leads by 12%.</li>
               </div>
             </div>
           </Zoom>
 
           <Zoom bottom>
             <div className="exp">
-              <h2> AccioJob - Software Developer Trainee </h2>
+              <h2> AccioJob | FULL STACK WEB DEVELOPER </h2>
 
               <div className="exp-details">
                 <h5> 05/2021-01/2022 </h5>
@@ -55,10 +59,10 @@ const Experience = () => {
               </div>
 
               <div className="exp-about">
-                <li>Completed an intensive Full Stack Development Internship.</li>
-                <li>Developed diverse projects from scratch including e-commerce, realtime chatting, showcasing expertise in MERN Stack.</li>
+                <li>Developed diverse projects from scratch including e-commerce, chat app showcasing hands-on expertise in MERN Stack.</li>
+                <li>Effectively deployed projects on GitHub Pages, Netlify and Heroku ensuring seamless accessibility across environments.</li>
                 <li>
-                  Effectively deployed projects on Github Pages, Netlify and Heroku ensuring seamless accessibility.
+                  Tech Stack: JavaScript, React.js, Node.js, Express.js, MongoDB, MaterialUI, Bootstrap, Firebase and more.
                 </li>
               </div>
             </div>

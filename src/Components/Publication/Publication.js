@@ -13,10 +13,9 @@ const Publication = () => {
 
         <Flip left>
           <div id="publication-info">
-            <h2> HYPERLOOP TRANSPORTATION SYSTEM </h2>
+            <h2> HYPERLOOP TRANSPORTATION SYSTEM | IJRESM | May 2020 </h2>
             <h4>
-              The research paper is all about the 5th mode of transportation
-              i.e., Hyperloop and published at IJRESM.
+              Published a research paper on the potential of Hyperloop as the 5th mode of transportation.
             </h4>
 
             <Button
