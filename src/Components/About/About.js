@@ -20,7 +20,7 @@ const About = () => {
           <Fade left>
             <p>
               {" "}
-              Hey there, I'm Ayush Tayal, a skilled Software Engineer proficient in MERN Stack and modern web tech. I've built e-commerce apps, chat applications, and more, using Redux, Material-UI, Ant Design, and Firebase. My research on the Hyperloop Transportation System was published during my Bachelor's degree. Currently, I'm at Mordor Intelligence, contributing to various projects like IW, Lorien, and Main Website. 
+              Hey there, I'm Ayush Tayal, a skilled Software Engineer having more than 4 years of experience, proficient in MERN Stack and modern web tech. I've built e-commerce apps, chat applications, and more, using Redux, Material-UI, Ant Design, and Firebase. My research on the Hyperloop Transportation System was published during my Bachelor's degree. Currently, I'm at Mordor Intelligence, contributing to various projects like IW, Lorien, and Main Website. 
               <br/>
               Let's connect and create innovative web solutions together!
             </p>

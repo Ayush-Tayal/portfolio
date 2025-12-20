@@ -11,6 +11,8 @@ import {
   SiFirebase,
   SiGithub,
   SiBitbucket,
+  SiNextdotjs,
+  SiTailwindcss
 } from "react-icons/si";
 import { FaBootstrap, FaReact, FaJira } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
@@ -30,6 +32,11 @@ const Skills = () => {
             <div>
               <SiJavascript className="skill_icon js_icon" />
               <h2> JavaScript </h2>
+            </div>
+
+            <div>
+              <SiNextdotjs className="skill_icon next_icon" />
+              <h2> NextJs </h2>
             </div>
 
             <div>
@@ -53,13 +60,8 @@ const Skills = () => {
             </div>
 
             <div>
-              <AiFillHtml5 className="skill_icon html_icon" />
-              <h2> HTML </h2>
-            </div>
-
-            <div>
-              <SiCss3 className="skill_icon css_icon" />
-              <h2> CSS </h2>
+              <SiTailwindcss className="skill_icon tailwind_icon" />
+              <h2> Tailwind </h2>
             </div>
 
             <div>
@@ -82,8 +84,6 @@ const Skills = () => {
               <h2> Redux </h2>
             </div>
 
-
-
             <div>
               <SiFirebase className="skill_icon firebase_icon" />
               <h2> Firebase </h2>
@@ -102,6 +102,16 @@ const Skills = () => {
             <div>
               <FaJira className="skill_icon jira_icon" />
               <h2> Jira </h2>
+            </div>
+
+             <div>
+              <AiFillHtml5 className="skill_icon html_icon" />
+              <h2> HTML </h2>
+            </div>
+
+            <div>
+              <SiCss3 className="skill_icon css_icon" />
+              <h2> CSS </h2>
             </div>
           </div>
         </Zoom>

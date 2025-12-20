@@ -2,16 +2,14 @@ import styled from "styled-components";
 
 export const HomeContainerWrapper = styled.div`
   #img-icon img {
-    height: 80vh;
+    max-width: 550px;
   }
 
   #home {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
-    margin-top: -3.5rem;
-    height: 100vh;
+    margin-top: 100px;
   }
 
   #home-content {
@@ -97,13 +95,13 @@ export const HomeContainerWrapper = styled.div`
       display: flex;
       flex-direction: column;
       margin: auto;
-      height: 85vh;
-      padding-top: 6vh;
+      padding-top: 40px;
       padding-bottom: 5vh;
     }
 
     #img-icon img {
-      height: 35vh;
+      max-width: 400px;
+      margin-bottom: 20px;
     }
 
     #home-content {

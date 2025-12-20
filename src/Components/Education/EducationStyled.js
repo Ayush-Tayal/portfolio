@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const EducationContainerWrapper = styled.div`
   #education {
     color: white;
-    padding-top: 5%;
+    padding-top: 2%;
   }
 
   #education-card {

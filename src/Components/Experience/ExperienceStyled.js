@@ -12,7 +12,7 @@ export const ExperienceContainerWrapper = styled.div`
   }
 
   .exp {
-    background: #2d343e;
+    background: #454545;
     padding: 20px 50px;
     margin: 50px 100px;
     border-radius: 8px;
@@ -30,6 +30,7 @@ export const ExperienceContainerWrapper = styled.div`
   .exp-about li {
     padding: 4px;
     text-align: justify;
+    line-height: 1.4;
   }
 
   @media screen and (max-width: 768px) {

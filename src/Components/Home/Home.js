@@ -37,7 +37,7 @@ const Home = () => {
       <HomeContainerWrapper>
         <div id="home">
           <div id="img-icon">
-            <img src={logo} alt="my-pic" />
+            <img src={logo} alt="my-pic"/>
           </div>
 
           <div id="home-content">

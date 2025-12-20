@@ -7,7 +7,7 @@ export const SkillsContainerWrapper = styled.div`
 
   #skill_content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     row-gap: 3rem;
     color: white;
@@ -27,7 +27,7 @@ export const SkillsContainerWrapper = styled.div`
 
   .skill_icon {
     font-size: 50px;
-    padding: 8px;
+    padding: 4px;
     border-radius: 50%;
     cursor:pointer;
     transition: transform .2s;
@@ -43,6 +43,12 @@ export const SkillsContainerWrapper = styled.div`
 
   .css_icon {
     background-color: #264de4;
+    color: ffffff;
+  }
+
+  .tailwind_icon {
+    background-color: ffffff;
+    color: #06B6D4;
   }
 
   .bootstrap_icon {
@@ -55,6 +61,11 @@ export const SkillsContainerWrapper = styled.div`
     color: #323330;
   }
 
+  .next_icon {
+    background-color: #06B6D4;
+    color: #191919;
+  }
+
   .react_icon {
     background-color: black;
     color: #61dbfb;
@@ -62,7 +73,7 @@ export const SkillsContainerWrapper = styled.div`
 
   .mui_icon {
     color: #2196f3;
-    background-color: white;
+    background-color: ffffff;
   }
 
   .antd_icon {
@@ -71,12 +82,13 @@ export const SkillsContainerWrapper = styled.div`
   }
 
   .redux_icon {
-    background-color: white;
+    background-color: ffffff;
     color: #764abc;
   }
 
   .node_icon {
     background-color: #3c873a;
+    color: #ffffff;
   }
 
   .express_icon {
@@ -86,6 +98,7 @@ export const SkillsContainerWrapper = styled.div`
 
   .mongo_icon {
     background-color: #061621;
+    color: #4db33d;
   }
 
   .firebase_icon {
@@ -105,6 +118,7 @@ export const SkillsContainerWrapper = styled.div`
 
   .jira_icon {
     background-color: #1a74ed;
+    color: #ffffff;
   }
 
   @media screen and (max-width: 768px) {

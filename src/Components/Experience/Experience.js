@@ -23,6 +23,9 @@ const Experience = () => {
               </div>
 
               <div className="exp-about">
+                <li> Collaborated with business stakeholders to gather requirements and led a team of 4-5 developers to build the new company website using Next.js and TypeScript, delivering features with 95% on-time rate.
+                </li>
+                
                 <li>
                   Led development of multiple modules for the new company website using Next.js, improving load performance by 30%.
                 </li>
