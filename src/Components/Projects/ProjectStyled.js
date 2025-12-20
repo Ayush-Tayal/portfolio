@@ -21,10 +21,13 @@ export const ProjectsContainerWrapper = styled.div`
     margin-top: 30px;
   }
 
-  .card div{
+  .card {
+    min-width: 300px;
+    margin: 20px;
+    div{
     padding-bottom :10px;
   }
-
+  }
   .project_title {
     text-align:center;
     padding: 10px;

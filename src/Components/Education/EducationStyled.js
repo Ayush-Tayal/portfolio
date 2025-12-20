@@ -11,6 +11,10 @@ export const EducationContainerWrapper = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 30px;
+
+    div {
+      min-width: 400px;
+    }
   }
 
   .education-heading {
@@ -33,7 +37,11 @@ export const EducationContainerWrapper = styled.div`
   @media screen and (max-width: 768px) {
     .educ {
       margin-bottom: 30px;
-      width: 80%;
+    }
+    #education-card {
+      div {
+        min-width: 300px;
+      }
     }
   }
 `;

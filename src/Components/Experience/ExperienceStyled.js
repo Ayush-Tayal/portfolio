@@ -25,6 +25,10 @@ export const ExperienceContainerWrapper = styled.div`
   .exp-details {
     display: flex;
     justify-content: space-between;
+
+    p {
+      margin: 2px 0px 6px 0px;
+    }
   }
 
   .exp-about li {

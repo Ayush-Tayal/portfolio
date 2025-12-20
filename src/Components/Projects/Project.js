@@ -24,7 +24,7 @@ const Project = () => {
             projects_data.map((project, i) => (
               <div className="card">
                 <Zoom>
-                  <Card sx={{ maxWidth: 345 }} key={i}>
+                  <Card key={i}>
                     <CardMedia
                       className="project_image"
                       component="img"

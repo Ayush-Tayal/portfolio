@@ -18,8 +18,8 @@ const Experience = () => {
               <h2> Mordor intelligence | Software Engineer </h2>
 
               <div className="exp-details">
-                <h5> 01/2022-Present </h5>
-                <h5> Telangana, Hyderabad </h5>
+                <p> 01/2022-Present </p>
+                <p> Telangana, Hyderabad </p>
               </div>
 
               <div className="exp-about">
@@ -57,8 +57,8 @@ const Experience = () => {
               <h2> AccioJob | FULL STACK WEB DEVELOPER </h2>
 
               <div className="exp-details">
-                <h5> 05/2021-01/2022 </h5>
-                <h5> Gurugram, Haryana </h5>
+                <p> 05/2021-01/2022 </p>
+                <p> Gurugram, Haryana </p>
               </div>
 
               <div className="exp-about">
