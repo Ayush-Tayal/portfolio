@@ -1,7 +1,1 @@
-body {
-  font-family: sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
+/* Global body/link rules now live in src/theme/GlobalStyle.js. */

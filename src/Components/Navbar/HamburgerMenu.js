@@ -12,7 +12,7 @@ import { GiClassicalKnowledge} from "react-icons/gi";
 const HamburgerMenuData = [
     {
       title: 'Home',
-      path: '#',
+      path: '#home',
       icon: <AiFillHome />,
       className: 'nav-text home'
     },

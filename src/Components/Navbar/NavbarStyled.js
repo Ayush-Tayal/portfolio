@@ -1,110 +1,61 @@
 import styled from "styled-components";
 
-export const NavbarContainerWrapper = styled.div`
-  #navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 80px;
-    margin-bottom: 20px;
-    z-index: 10;
-    background-color: #2ca46d;
+export const NavbarWrapper = styled.div`
+  .app-bar {
+    background: ${({ $scrolled }) => ($scrolled ? "var(--color-surface-translucent)" : "transparent")};
+    backdrop-filter: ${({ $scrolled }) => ($scrolled ? "saturate(180%) blur(12px)" : "none")};
+    -webkit-backdrop-filter: ${({ $scrolled }) => ($scrolled ? "saturate(180%) blur(12px)" : "none")};
+    border-bottom: 1px solid ${({ $scrolled }) => ($scrolled ? "var(--color-border)" : "transparent")};
+    box-shadow: ${({ $scrolled }) => ($scrolled ? "var(--shadow-sm)" : "none")};
+    transition: background-color var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out),
+      box-shadow var(--dur-base) var(--ease-out);
   }
 
-  #navbar a {
-    color: whitesmoke;
-    font-size: 26px;
-    background-color: #2ca46d;
-    font-family: "Poppins";
-    font-weight: 900;
-  }
-
-  #left-nav a {
-    font-weight: 800;
-  }
-
-  .hamburger_icon, close_icon {
-    color: whitesmoke;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  
-  #menu-bars {
-    z-index: 20;
-    color: whitesmoke;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    right: 5%;
-  }
-
-  .nav-menu {
-    background-color: #1ca16a;
-    width: 20%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    transition: 2000ms;
-  }
-
-  .nav-menu.active {
-    padding-top: 3%;
-    right: 0;
-    transition: 400ms;
-    z-index: 1;
-  }
-
-  .nav-text {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    list-style: none;
-    height: 60px;
-    padding-bottom: 8px;
-  }
-
-  .nav-text a {
-    color: whitesmoke;
-    font-size: 20px;
-    font-family: "Poppins";
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 5px;
-  }
-
-  .nav-text a:hover {
-    background-color: #003153;
-    transform: scale(1.1);
-  }
-
-  .nav-menu-items {
+  .toolbar {
+    max-width: var(--content-max);
     width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    height: ${({ $scrolled }) => ($scrolled ? "var(--nav-h-scrolled)" : "var(--nav-h)")};
+    min-height: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: height var(--dur-base) var(--ease-out);
   }
 
-  span {
-    margin-left: 16px;
+  .brand {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-lg);
+    color: var(--color-text-primary);
+    letter-spacing: var(--tracking-tight);
   }
 
-  @media screen and (max-width: 768px) {
-    #navbar {
-      padding: 12px 40px;
-    }
+  .toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+  }
 
-    .nav-menu {
-      width: 180px;
-    }
+  .hamburger-btn {
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    width: 40px;
+    height: 40px;
+    display: none;
+    flex-shrink: 0;
+  }
 
-    .nav-menu.active {
-      padding-top: 20%;
+  @media screen and (max-width: 1023.98px) {
+    nav {
+      display: none;
     }
-    .nav-menu-items {
-      padding-left: 10px;
+    .hamburger-btn {
+      display: inline-flex;
     }
   }
 `;
+
+export default NavbarWrapper;

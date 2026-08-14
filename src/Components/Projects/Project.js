@@ -1,72 +1,62 @@
 import React from "react";
-import projects_data from "./Projects_Data";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { Bounce, Zoom } from "react-reveal";
+import { BsCart3, BsChatDotsFill } from "react-icons/bs";
+import { WiDaySunny } from "react-icons/wi";
+import ProjectsData from "./Projects_Data";
 import { ProjectsContainerWrapper } from "./ProjectStyled";
+import { Section, SectionHeading, Reveal, PrimaryButton, GhostButton } from "../Shared";
+
+const COVERS = {
+  1: {
+    Icon: BsCart3,
+    gradient:
+      "repeating-linear-gradient(135deg, rgba(255,255,255,0.08) 0 2px, transparent 2px 10px), linear-gradient(135deg, var(--color-brand) 0%, var(--color-accent) 100%)",
+  },
+  2: {
+    Icon: WiDaySunny,
+    gradient:
+      "repeating-linear-gradient(135deg, rgba(255,255,255,0.08) 0 2px, transparent 2px 10px), linear-gradient(135deg, var(--color-accent) 0%, var(--color-brand-hover) 100%)",
+  },
+  3: {
+    Icon: BsChatDotsFill,
+    gradient:
+      "repeating-linear-gradient(135deg, rgba(255,255,255,0.08) 0 2px, transparent 2px 10px), linear-gradient(135deg, var(--color-brand-hover) 0%, var(--color-accent) 100%)",
+  },
+};
 
 const Project = () => {
-  // console.log("projeect data", projects_data);
-
   return (
-    <ProjectsContainerWrapper>
-      <div id="projects">
-        <Bounce>
-          <h1> PERSONAL PROJECTS </h1>
-        </Bounce>
+    <Section id="projects">
+      <ProjectsContainerWrapper>
+        <SectionHeading eyebrowNumber="05" eyebrow="Projects" title="Projects" />
 
-        <div id="projects_card">
-          {projects_data &&
-            projects_data.map((project, i) => (
-              <div className="card">
-                <Zoom>
-                  <Card key={i}>
-                    <CardMedia
-                      className="project_image"
-                      component="img"
-                      alt="project image"
-                      height="160"
-                      image={project.thumbnail}
-                    />
-
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant="h5"
-                        component="div"
-                        className="project_title"
-                      >
-                        {project.title}
-                      </Typography>
-                    </CardContent>
-
-                    <CardActions className="project_button">
-                      <Button
-                        variant="outlined"
-                        size="small"
-                        onClick={() => window.open(project.github)}
-                      >
-                        View Code{" "}
-                      </Button>
-                      <Button
-                        variant="contained"
-                        size="small"
-                        onClick={() => window.open(project.live)}
-                      >
-                        Live{" "}
-                      </Button>
-                    </CardActions>
-                  </Card>
-                </Zoom>
-              </div>
-            ))}
+        <div className="projects-grid">
+          {ProjectsData.map((project, index) => {
+            const cover = COVERS[project.id];
+            return (
+              <Reveal key={project.id} delay={index * 90}>
+                <article className="project-card">
+                  <div className="project-cover" style={{ backgroundImage: cover.gradient }}>
+                    <cover.Icon className="project-cover-icon" aria-hidden="true" />
+                  </div>
+                  <div className="project-body">
+                    <h3 className="project-title">{project.title}</h3>
+                    {project.desc && <p>{project.desc}</p>}
+                    <div className="project-actions">
+                      <GhostButton href={project.github} target="_blank" rel="noopener noreferrer">
+                        Code
+                      </GhostButton>
+                      <PrimaryButton href={project.live} target="_blank" rel="noopener noreferrer">
+                        Live demo
+                      </PrimaryButton>
+                    </div>
+                  </div>
+                </article>
+              </Reveal>
+            );
+          })}
         </div>
-      </div>
-    </ProjectsContainerWrapper>
+      </ProjectsContainerWrapper>
+    </Section>
   );
 };
 

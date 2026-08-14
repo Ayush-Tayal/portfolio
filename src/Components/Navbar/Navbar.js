@@ -1,53 +1,44 @@
 import React, { useState } from "react";
-import { NavbarContainerWrapper } from "./NavbarStyled";
+import { AppBar, Toolbar, IconButton } from "@mui/material";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { CgMenuCheese } from "react-icons/cg";
-import HamburgerMenuData from "./HamburgerMenu";
-import { MdCloseFullscreen } from "react-icons/md";
+import NavLinks from "./NavLinks";
+import MobileNavDrawer from "./MobileNavDrawer";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import { NavbarWrapper } from "./NavbarStyled";
+import useActiveSection from "../../hooks/useActiveSection";
 
 const Navbar = () => {
-  const [showHamnburgerMenu, setShowHamnburgerMenu] = useState(false);
-
-  const handleHamnburgerMenu = () => {
-    setShowHamnburgerMenu(!showHamnburgerMenu);
-  };
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const scrolled = useScrollTrigger({ disableHysteresis: true, threshold: 24 });
+  const activeId = useActiveSection();
 
   return (
-    <NavbarContainerWrapper>
-      <div id="navbar">
-        <div id="left-nav">
-          <a href="#"> AYUSH TAYAL </a>
-        </div>
+    <NavbarWrapper $scrolled={scrolled}>
+      <AppBar position="fixed" elevation={0} className="app-bar">
+        <Toolbar className="toolbar">
+          <a href="#home" className="brand">
+            Ayush Tayal
+          </a>
 
-        <div id="menu-bars">
-          {!showHamnburgerMenu ? (
-            <CgMenuCheese
-              className="hamburger_icon"
-              onClick={handleHamnburgerMenu}
-            />
-          ) : (
-            <MdCloseFullscreen
-              className="close_icon"
-              onClick={handleHamnburgerMenu}
-            />
-          )}
-        </div>
-      </div>
+          <div className="toolbar-right">
+            <NavLinks activeId={activeId} />
+            <ThemeToggle />
+            <IconButton
+              className="hamburger-btn"
+              aria-label="Open menu"
+              aria-expanded={drawerOpen}
+              aria-controls="mobile-nav-drawer"
+              onClick={() => setDrawerOpen(true)}
+            >
+              <CgMenuCheese />
+            </IconButton>
+          </div>
+        </Toolbar>
+      </AppBar>
 
-      <nav className={showHamnburgerMenu ? "nav-menu active" : "nav-menu"}>
-        <ul className="nav-menu-items" onClick={handleHamnburgerMenu}>
-          {HamburgerMenuData.map((item, index) => {
-            return (
-              <li key={index} className={item.className}>
-                <a href={item.path}>
-                  {item.icon}
-                  <span>{item.title}</span>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-    </NavbarContainerWrapper>
+      <MobileNavDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} activeId={activeId} />
+    </NavbarWrapper>
   );
 };
 

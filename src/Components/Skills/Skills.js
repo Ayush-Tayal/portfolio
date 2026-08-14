@@ -12,111 +12,76 @@ import {
   SiGithub,
   SiBitbucket,
   SiNextdotjs,
-  SiTailwindcss
+  SiTailwindcss,
 } from "react-icons/si";
 import { FaBootstrap, FaReact, FaJira } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
-import { Bounce, Zoom } from "react-reveal";
 import { SkillsContainerWrapper } from "./SkillsStyled";
+import { Section, SectionHeading, Reveal } from "../Shared";
+
+const SKILL_GROUPS = [
+  {
+    label: "Core",
+    skills: [
+      { name: "JavaScript", Icon: SiJavascript, vendor: "javascript" },
+      { name: "HTML", Icon: AiFillHtml5, vendor: "html" },
+      { name: "CSS", Icon: SiCss3, vendor: "css" },
+    ],
+  },
+  {
+    label: "Frontend",
+    skills: [
+      { name: "ReactJs", Icon: FaReact, vendor: "react" },
+      { name: "NextJs", Icon: SiNextdotjs, vendor: "nextjs" },
+      { name: "Redux", Icon: SiRedux, vendor: "redux" },
+      { name: "Tailwind", Icon: SiTailwindcss, vendor: "tailwind" },
+      { name: "Bootstrap", Icon: FaBootstrap, vendor: "bootstrap" },
+      { name: "Material-UI", Icon: SiMui, vendor: "mui" },
+      { name: "ANT-Design", Icon: SiAntdesign, vendor: "antd" },
+    ],
+  },
+  {
+    label: "Backend & Data",
+    skills: [
+      { name: "NodeJs", Icon: IoLogoNodejs, vendor: "nodejs" },
+      { name: "ExpressJs", Icon: SiExpress, vendor: "express" },
+      { name: "MongoDB", Icon: SiMongodb, vendor: "mongodb" },
+      { name: "Firebase", Icon: SiFirebase, vendor: "firebase" },
+    ],
+  },
+  {
+    label: "Tooling",
+    skills: [
+      { name: "Github", Icon: SiGithub, vendor: "github" },
+      { name: "BitBucket", Icon: SiBitbucket, vendor: "bitbucket" },
+      { name: "Jira", Icon: FaJira, vendor: "jira" },
+    ],
+  },
+];
 
 const Skills = () => {
   return (
-    <SkillsContainerWrapper>
-      <div id="skills">
-        <Bounce>
-          <h1 className="skill-heading"> MY SKILLS </h1>
-        </Bounce>
+    <Section id="skills" tinted>
+      <SkillsContainerWrapper>
+        <SectionHeading eyebrowNumber="02" eyebrow="Skills" title="My Skills" />
 
-        <Zoom>
-          <div id="skill_content">
-            <div>
-              <SiJavascript className="skill_icon js_icon" />
-              <h2> JavaScript </h2>
-            </div>
-
-            <div>
-              <SiNextdotjs className="skill_icon next_icon" />
-              <h2> NextJs </h2>
-            </div>
-
-            <div>
-              <FaReact className="skill_icon react_icon" />
-              <h2> ReactJs </h2>
-            </div>
-
-            <div>
-              <IoLogoNodejs className="skill_icon node_icon" />
-              <h2> NodeJs </h2>
-            </div>
-
-            <div>
-              <SiExpress className="skill_icon express_icon" />
-              <h2> ExpressJs </h2>
-            </div>
-
-            <div>
-              <SiMongodb className="skill_icon mongo_icon" />
-              <h2> MongoDB </h2>
-            </div>
-
-            <div>
-              <SiTailwindcss className="skill_icon tailwind_icon" />
-              <h2> Tailwind </h2>
-            </div>
-
-            <div>
-              <FaBootstrap className="skill_icon bootstrap_icon" />
-              <h2> Bootstrap </h2>
-            </div>
-
-            <div>
-              <SiMui className="skill_icon mui_icon" />
-              <h2> Material-UI </h2>
-            </div>
-
-            <div>
-              <SiAntdesign className="skill_icon antd_icon" />
-              <h2> ANT-Design </h2>
-            </div>
-
-            <div>
-              <SiRedux className="skill_icon redux_icon" />
-              <h2> Redux </h2>
-            </div>
-
-            <div>
-              <SiFirebase className="skill_icon firebase_icon" />
-              <h2> Firebase </h2>
-            </div>
-
-            <div>
-              <SiGithub className="skill_icon github_icon" />
-              <h2> Github </h2>
-            </div>
-
-            <div>
-              <SiBitbucket className="skill_icon bit_icon" />
-              <h2> BitBucket </h2>
-            </div>
-
-            <div>
-              <FaJira className="skill_icon jira_icon" />
-              <h2> Jira </h2>
-            </div>
-
-             <div>
-              <AiFillHtml5 className="skill_icon html_icon" />
-              <h2> HTML </h2>
-            </div>
-
-            <div>
-              <SiCss3 className="skill_icon css_icon" />
-              <h2> CSS </h2>
-            </div>
-          </div>
-        </Zoom>
-      </div>
-    </SkillsContainerWrapper>
+        <div className="skill-groups">
+          {SKILL_GROUPS.map((group, groupIndex) => (
+            <Reveal key={group.label} delay={groupIndex * 80}>
+              <span className="skill-group-label">{group.label}</span>
+              <div className="skill-chips">
+                {group.skills.map(({ name, Icon, vendor }) => (
+                  <span key={name} className="skill-chip" style={{ "--chip-vendor": `var(--vendor-${vendor})` }}>
+                    <Icon className="skill-chip-icon" aria-hidden="true" />
+                    <span className="skill-chip-label">{name}</span>
+                  </span>
+                ))}
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </SkillsContainerWrapper>
+    </Section>
   );
 };
 

@@ -1,48 +1,127 @@
 import styled from "styled-components";
 
 export const ExperienceContainerWrapper = styled.div`
-  #experience {
-    color: white;
-    padding-top: 3%;
+  .timeline {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 36px;
   }
 
-  .experience-heading {
-    text-align: center;
-    color:#66B3FF;
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--color-border-strong), transparent);
   }
 
-  .exp {
-    background: #454545;
-    padding: 20px 50px;
-    margin: 50px 100px;
-    border-radius: 8px;
+  .timeline-item {
+    position: relative;
+    margin-bottom: var(--space-7);
   }
 
-  .exp h2 {
-    margin-bottom: 6px;
+  .timeline-item:last-child {
+    margin-bottom: 0;
   }
 
-  .exp-details {
+  .timeline-node {
+    position: absolute;
+    left: -25px;
+    top: 26px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-bg);
+    border: 2px solid var(--color-border-strong);
+    z-index: 1;
+  }
+
+  .timeline-node.current {
+    background: var(--color-brand);
+    border-color: var(--color-brand);
+    box-shadow: 0 0 0 4px var(--color-brand-subtle);
+  }
+
+  .timeline-meta {
     display: flex;
-    justify-content: space-between;
-
-    p {
-      margin: 2px 0px 6px 0px;
-    }
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    margin-bottom: var(--space-3);
   }
 
-  .exp-about li {
-    padding: 4px;
-    text-align: justify;
-    line-height: 1.4;
+  .timeline-role {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin: 0 0 var(--space-4) 0;
+    font-family: var(--font-display);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
   }
 
-  @media screen and (max-width: 768px) {
-    .exp {
-      background: #2d343e;
-      padding: 10px 30px;
-      margin: 20px 20px;
-      border-radius: 8px;
-    }
+  .role-divider {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--color-text-tertiary);
+  }
+
+  .role {
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    font-size: var(--fs-lg);
+  }
+
+  .current-pill {
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-brand);
+    background: var(--color-brand-subtle);
+    border-radius: var(--radius-full);
+    padding: 3px 10px;
+  }
+
+  .timeline-bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .timeline-bullets li {
+    position: relative;
+    padding-left: var(--space-5);
+    line-height: var(--lh-relaxed);
+    color: var(--color-text-secondary);
+    font-size: var(--fs-base);
+  }
+
+  .timeline-bullets li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    background: var(--color-brand-subtle);
+    border: 1px solid var(--color-brand);
   }
 `;
+
+export default ExperienceContainerWrapper;

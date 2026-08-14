@@ -1,55 +1,54 @@
 import styled from "styled-components";
 
 export const AboutContainerWrapper = styled.div`
-  #about {
-    display: flex;
-    justify-content: space-around;
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
-    padding-top: 5%;
+    gap: var(--space-7);
   }
 
-  #about-me h1 {
-    font-weight: 700;
-    color:#66B3FF;
+  .about-copy p {
+    max-width: 62ch;
+    text-align: left;
+    font-size: var(--fs-lg);
+    line-height: var(--lh-relaxed);
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--space-4) 0;
   }
 
-  #about-me {
-    color: whitesmoke;
-    padding: 30px;
-    width: 50%;
-  }
-
-  #about-me p {
-    text-align: justify;
-    font-size: 20px;
-    line-height: 160%;
-  }
-
-  #about-img img {
-    height: 50vh;
-  }
-
-  #download-resume button {
-    color: whitesmoke;
+  .about-copy strong {
+    color: var(--color-text-primary);
     font-weight: 600;
-    background-color: #2ca46d;
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 30px;
   }
 
-  .download_icon {
-    margin-left:20px;
-    font-size : 20px
+  .about-image {
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
 
-  @media screen and (max-width: 768px) {
-    #about-me {
-      padding: 10px;
-    }
+  .about-image img {
+    position: relative;
+    z-index: 1;
+    height: clamp(160px, 32vw, 380px);
+    width: auto;
+    object-fit: contain;
+  }
 
-    #about-img {
-      display: none;
+  .about-image-glow {
+    position: absolute;
+    inset: 10%;
+    background: radial-gradient(circle, var(--color-brand-subtle), transparent 70%);
+    filter: blur(4px);
+    z-index: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr 0.8fr;
     }
   }
 `;
+
+export default AboutContainerWrapper;

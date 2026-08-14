@@ -1,130 +1,64 @@
 import styled from "styled-components";
 
 export const SkillsContainerWrapper = styled.div`
-  #skills {
-    padding-top: 5%;
-  }
-
-  #skill_content {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    row-gap: 3rem;
-    color: white;
-    margin-top: 30px;
-  }
-
-  #skill_content div {
+  .skill-groups {
     display: flex;
     flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .skill-group-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-text-tertiary);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+
+  .skill-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .skill-chip {
+    display: inline-flex;
     align-items: center;
+    gap: var(--space-2);
+    padding: 10px 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    transition: border-color var(--dur-base) var(--ease-out), background-color var(--dur-base) var(--ease-out),
+      transform var(--dur-base) var(--ease-out);
   }
 
-  .skill-heading {
-    text-align: center;
-    color:#66B3FF;
+  .skill-chip-icon {
+    font-size: 18px;
+    color: var(--color-text-secondary);
+    transition: color var(--dur-base) var(--ease-out);
   }
 
-  .skill_icon {
-    font-size: 50px;
-    padding: 4px;
-    border-radius: 50%;
-    cursor:pointer;
-    transition: transform .2s;
+  .skill-chip-label {
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    color: var(--color-text-primary);
   }
 
-  .skill_icon:hover{
-    transform:scale(1.5);
-  }
+  @media (hover: hover) {
+    .skill-chip:hover {
+      border-color: var(--color-border-strong);
+      background: var(--color-surface-hover);
+      transform: translateY(-1px);
+    }
 
-  .html_icon {
-    background-color: #e34c26;
-  }
-
-  .css_icon {
-    background-color: #264de4;
-    color: ffffff;
-  }
-
-  .tailwind_icon {
-    background-color: ffffff;
-    color: #06B6D4;
-  }
-
-  .bootstrap_icon {
-    background-color: #563d7c;
-    color: #ffffff;
-  }
-
-  .js_icon {
-    background-color: #f0db4f;
-    color: #323330;
-  }
-
-  .next_icon {
-    background-color: #06B6D4;
-    color: #191919;
-  }
-
-  .react_icon {
-    background-color: black;
-    color: #61dbfb;
-  }
-
-  .mui_icon {
-    color: #2196f3;
-    background-color: ffffff;
-  }
-
-  .antd_icon {
-    background-color: #ffffff;
-    color: #2196f3;
-  }
-
-  .redux_icon {
-    background-color: ffffff;
-    color: #764abc;
-  }
-
-  .node_icon {
-    background-color: #3c873a;
-    color: #ffffff;
-  }
-
-  .express_icon {
-    background-color: #f0db4f;
-    color: black;
-  }
-
-  .mongo_icon {
-    background-color: #061621;
-    color: #4db33d;
-  }
-
-  .firebase_icon {
-    background-color: #ffffff;
-    color: #f5820d;
-  }
-
-  .github_icon {
-    background-color: #171515;
-    color: #ffffff;
-  }
-
-  .bit_icon {
-    background-color: #1a74ed;
-    color: #ffffff;
-  }
-
-  .jira_icon {
-    background-color: #1a74ed;
-    color: #ffffff;
-  }
-
-  @media screen and (max-width: 768px) {
-    #skill_content {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+    .skill-chip:hover .skill-chip-icon {
+      color: var(--chip-vendor, var(--color-brand));
     }
   }
 `;
+
+export default SkillsContainerWrapper;
