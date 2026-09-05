@@ -63,6 +63,17 @@ const shadow = {
 // Fixed brand colors (tech logos, social platforms) — never themed by mode.
 const vendor = {
   javascript: "#f0db4f",
+  typescript: "#3178C6",
+  openai: "#74AA9C",
+  claude: "#D97757",
+  gemini: "#4285F4",
+  langchain: "#4CA6A0",
+  langgraph: "#FF6B6B",
+  agents: "#8B5CF6",
+  mcp: "#D97757",
+  vercel: "#8A8A8A",
+  prompt: "#10B981",
+  typesense: "#E0457B",
   html: "#E34F26",
   css: "#1572B6",
   react: "#61DBFB",

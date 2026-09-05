@@ -22,14 +22,39 @@ export const HomeContainerWrapper = styled.div`
 
   .portrait-frame {
     position: relative;
-    width: clamp(200px, 62vw, 380px);
+    width: min(100%, clamp(280px, 80vw, 480px));
+    transition: transform var(--dur-base) var(--ease-out);
+  }
+
+  /* Gradient ring so the portrait reads as a deliberate frame. */
+  .portrait-frame::after {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    z-index: 2;
+    border-radius: calc(var(--radius-xl) + 1px);
+    padding: 1px;
+    background: linear-gradient(135deg, var(--color-brand), var(--color-accent));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    opacity: 0.55;
+    pointer-events: none;
+  }
+
+  @media (hover: hover) {
+    .portrait-frame:hover {
+      transform: translateY(-4px);
+    }
   }
 
   .portrait-glow {
     position: absolute;
     inset: -12%;
     background: radial-gradient(circle, var(--color-brand-subtle), transparent 70%);
-    filter: blur(6px);
+    border-radius: var(--radius-xl);
+    filter: blur(24px);
     z-index: 0;
   }
 
@@ -37,10 +62,11 @@ export const HomeContainerWrapper = styled.div`
     position: relative;
     z-index: 1;
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: var(--radius-xl);
     border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-lg);
   }
 
   .pill {
@@ -141,7 +167,7 @@ export const HomeContainerWrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     .hero {
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1fr 1.05fr;
     }
 
     .hero-content {
@@ -150,9 +176,6 @@ export const HomeContainerWrapper = styled.div`
 
     .hero-portrait {
       order: 2;
-    }
-
-    .hero-portrait {
       justify-content: flex-end;
     }
   }

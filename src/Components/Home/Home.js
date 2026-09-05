@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../Assests/icon.jpg";
+import logo from "../../Assests/icon-web.jpg";
 import Typewriter from "typewriter-effect";
 import { HomeContainerWrapper } from "./HomeStyled";
 import { IoIosArrowDropupCircle } from "react-icons/io";
@@ -32,7 +32,7 @@ const Home = () => {
           <Reveal mount="onMount" delay={120}>
             <div className="portrait-frame">
               <div className="portrait-glow" aria-hidden="true" />
-              <img src={logo} alt="Ayush Tayal" width="320" height="400" decoding="async" />
+              <img src={logo} alt="Ayush Tayal" width="480" height="360" decoding="async" />
             </div>
           </Reveal>
         </div>

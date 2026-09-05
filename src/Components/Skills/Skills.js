@@ -3,6 +3,9 @@ import { AiFillHtml5 } from "react-icons/ai";
 import {
   SiCss3,
   SiJavascript,
+  SiTypescript,
+  SiOpenai,
+  SiVercel,
   SiMui,
   SiAntdesign,
   SiMongodb,
@@ -16,6 +19,10 @@ import {
 } from "react-icons/si";
 import { FaBootstrap, FaReact, FaJira } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
+import { BsStars } from "react-icons/bs";
+import { HiOutlineSparkles } from "react-icons/hi2";
+import { RiRobot2Line } from "react-icons/ri";
+import { TbLink, TbTopologyStar3, TbPlugConnected, TbPrompt, TbSearch } from "react-icons/tb";
 import { SkillsContainerWrapper } from "./SkillsStyled";
 import { Section, SectionHeading, Reveal } from "../Shared";
 
@@ -23,6 +30,7 @@ const SKILL_GROUPS = [
   {
     label: "Core",
     skills: [
+      { name: "TypeScript", Icon: SiTypescript, vendor: "typescript" },
       { name: "JavaScript", Icon: SiJavascript, vendor: "javascript" },
       { name: "HTML", Icon: AiFillHtml5, vendor: "html" },
       { name: "CSS", Icon: SiCss3, vendor: "css" },
@@ -38,6 +46,21 @@ const SKILL_GROUPS = [
       { name: "Bootstrap", Icon: FaBootstrap, vendor: "bootstrap" },
       { name: "Material-UI", Icon: SiMui, vendor: "mui" },
       { name: "ANT-Design", Icon: SiAntdesign, vendor: "antd" },
+    ],
+  },
+  {
+    label: "AI & LLM",
+    skills: [
+      { name: "OpenAI API", Icon: SiOpenai, vendor: "openai" },
+      { name: "Claude API", Icon: HiOutlineSparkles, vendor: "claude" },
+      { name: "Gemini", Icon: BsStars, vendor: "gemini" },
+      { name: "LangChain", Icon: TbLink, vendor: "langchain" },
+      { name: "LangGraph", Icon: TbTopologyStar3, vendor: "langgraph" },
+      { name: "AI Agents", Icon: RiRobot2Line, vendor: "agents" },
+      { name: "MCP", Icon: TbPlugConnected, vendor: "mcp" },
+      { name: "Vercel AI SDK", Icon: SiVercel, vendor: "vercel" },
+      { name: "Prompt Engineering", Icon: TbPrompt, vendor: "prompt" },
+      { name: "Typesense", Icon: TbSearch, vendor: "typesense" },
     ],
   },
   {
